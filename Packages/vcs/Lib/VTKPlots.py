@@ -398,7 +398,7 @@ class VTKVCSBackend(object):
       self.createLogo()
     if self.renWin.GetSize()!=(0,0):
       self.scaleLogo()
-    if not kargs.get("donotstoredisplay",False) and self.bg:
+    if not kargs.get("donotstoredisplay",False) :#and self.bg:
       self.renWin.Render()
 
 
